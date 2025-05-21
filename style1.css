@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #4e1e1e, #08161c);
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+}
+.container {
+    max-width: 600px;
+    width: 100%;
+    background-color: rgb(231, 222, 222);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(13, 0, 0, 0.1);
+}
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+}
+.bucket-list {
+    list-style: none;
+}
+.bucket-list li {
+    padding: 12px 16px;
+    font-size: 18px;
+    margin: 10px 0;
+    border-left: 5px solid #0077cc;
+    background-color: #091c2c;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.bucket-list li.done {
+    background-color: #387346;
+    border-left-color: #1a0457;
+    color: #d4bfb7;
+    text-decoration: line-through;
+}
+.bucket-list li.pending {
+    background-color: #97888a;
+    border-left-color: #190c4f;
+    color: #041007;
+}
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    .bucket-list li {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
